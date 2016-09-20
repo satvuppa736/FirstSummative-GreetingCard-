@@ -1,6 +1,6 @@
 ﻿namespace FirstSummative_GreetingCard_
 {
-    partial class Form1
+    partial class greetingCard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(greetingCard));
             this.SuspendLayout();
             // 
-            // Form1
+            // greetingCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.Cyan;
+            this.ClientSize = new System.Drawing.Size(278, 427);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "greetingCard";
+            this.Text = "Greeting Card";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

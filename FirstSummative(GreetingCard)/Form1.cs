@@ -1,4 +1,8 @@
-﻿using System;
+﻿///Created By Satvir Uppal
+///On September 20th 2016
+///First Summative for Programming Class
+///Follow me on Insta & Twitter @SatvirUppal
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +14,16 @@ using System.Windows.Forms;
 
 namespace FirstSummative_GreetingCard_
 {
-    public partial class Form1 : Form
+    public partial class greetingCard : Form
     {
-        public Form1()
+        public greetingCard()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //first Commit
+            
         }
     }
 }
