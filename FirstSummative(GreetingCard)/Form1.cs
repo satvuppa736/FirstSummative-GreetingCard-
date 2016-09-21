@@ -21,9 +21,21 @@ namespace FirstSummative_GreetingCard_
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void openButton_Click(object sender, EventArgs e)
         {
-            
+
+            Graphics formGraphics = this.CreateGraphics();
+
+            openButton.Visible = false;
+            greetingLabel.Visible = false;
+            nameLabel.Visible = false;
+            dateLabel.Visible = false;
+
+            formGraphics.Clear(Color.Black);
+
+            Pen drawPen = new Pen(Color.White, 10);
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+
         }
     }
 }
