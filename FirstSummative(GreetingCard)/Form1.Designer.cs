@@ -43,7 +43,7 @@
             this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openButton.ForeColor = System.Drawing.Color.Transparent;
-            this.openButton.Location = new System.Drawing.Point(74, 84);
+            this.openButton.Location = new System.Drawing.Point(93, 84);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(130, 50);
             this.openButton.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.greetingLabel.BackColor = System.Drawing.Color.Transparent;
             this.greetingLabel.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greetingLabel.ForeColor = System.Drawing.Color.White;
-            this.greetingLabel.Location = new System.Drawing.Point(4, 5);
+            this.greetingLabel.Location = new System.Drawing.Point(17, 9);
             this.greetingLabel.Name = "greetingLabel";
             this.greetingLabel.Size = new System.Drawing.Size(278, 38);
             this.greetingLabel.TabIndex = 1;
@@ -70,7 +70,7 @@
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.MintCream;
-            this.nameLabel.Location = new System.Drawing.Point(2, 350);
+            this.nameLabel.Location = new System.Drawing.Point(2, 374);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(94, 19);
             this.nameLabel.TabIndex = 2;
@@ -82,7 +82,7 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.dateLabel.ForeColor = System.Drawing.Color.MintCream;
-            this.dateLabel.Location = new System.Drawing.Point(0, 373);
+            this.dateLabel.Location = new System.Drawing.Point(2, 403);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(122, 19);
             this.dateLabel.TabIndex = 3;
@@ -94,7 +94,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrchid;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(278, 427);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(307, 459);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.greetingLabel);

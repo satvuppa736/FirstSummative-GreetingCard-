@@ -34,7 +34,10 @@ namespace FirstSummative_GreetingCard_
             formGraphics.Clear(Color.Black);
 
             Pen drawPen = new Pen(Color.White, 10);
-            SolidBrush drawBrush = new SolidBrush(Color.Black);
+            SolidBrush drawBrush = new SolidBrush(Color.White);
+
+            formGraphics.FillEllipse(drawBrush, 251, 41, 10, 10);
+            formGraphics.FillEllipse(drawBrush, 55, 207, 10, 10);
 
         }
     }
