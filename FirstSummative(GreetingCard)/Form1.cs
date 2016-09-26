@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace FirstSummative_GreetingCard_
 {
@@ -33,11 +34,36 @@ namespace FirstSummative_GreetingCard_
 
             formGraphics.Clear(Color.Black);
 
-            Pen drawPen = new Pen(Color.White, 10);
+            Pen drawPen = new Pen(Color.White, 1);
             SolidBrush drawBrush = new SolidBrush(Color.White);
 
+            formGraphics.FillEllipse(drawBrush, 65, 207, 10, 10);
+            formGraphics.DrawLine(drawPen, 65, 212, 101, 200);
+
+            formGraphics.FillEllipse(drawBrush, 101, 194, 10, 10);
+            formGraphics.DrawLine(drawPen, 101, 200, 180, 195);
+
+            formGraphics.FillEllipse(drawBrush, 176, 184, 30, 30);
+            formGraphics.DrawLine(drawPen, 187, 195, 188, 150);
+            formGraphics.DrawLine(drawPen, 187, 195, 145, 145);
+
+            formGraphics.FillEllipse(drawBrush, 182, 145, 10, 10);
+
+            formGraphics.FillEllipse(drawBrush, 141, 139, 15, 15);
+            formGraphics.DrawLine(drawPen, 145, 145, 104, 149);
+
+            formGraphics.FillEllipse(drawBrush, 102, 147, 10, 10);
+            formGraphics.DrawLine(drawPen, 105, 150, 50, 175);
+
+            formGraphics.FillEllipse(drawBrush, 45, 171, 15, 15);
+
+
             formGraphics.FillEllipse(drawBrush, 251, 41, 10, 10);
-            formGraphics.FillEllipse(drawBrush, 55, 207, 10, 10);
+            formGraphics.FillEllipse(drawBrush, 149, 61, 20, 20);
+            formGraphics.FillEllipse(drawBrush, 177, 91, 12, 12);
+            formGraphics.FillEllipse(drawBrush, 204, 102, 20, 20);
+            formGraphics.FillEllipse(drawBrush, 227, 78, 10, 10);
+
 
         }
     }
