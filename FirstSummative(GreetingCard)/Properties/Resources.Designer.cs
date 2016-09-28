@@ -61,11 +61,20 @@ namespace FirstSummative_GreetingCard_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream dingSound {
+            get {
+                return ResourceManager.GetStream("dingSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap thank_you_greeting_cards {
+        internal static System.Drawing.Bitmap thankYouIcon {
             get {
-                object obj = ResourceManager.GetObject("thank-you-greeting-cards", resourceCulture);
+                object obj = ResourceManager.GetObject("thankYouIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

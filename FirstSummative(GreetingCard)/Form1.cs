@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace FirstSummative_GreetingCard_
 {
@@ -25,7 +26,14 @@ namespace FirstSummative_GreetingCard_
         private void openButton_Click(object sender, EventArgs e)
         {
 
+
             Graphics formGraphics = this.CreateGraphics();
+
+            SoundPlayer player = new SoundPlayer(Properties.Resources.dingSound);
+
+            player.Play();
+
+            Thread.Sleep(900);
 
             openButton.Visible = false;
             greetingLabel.Visible = false;
@@ -48,10 +56,25 @@ namespace FirstSummative_GreetingCard_
             formGraphics.DrawLine(drawPen, 187, 195, 145, 145);
 
             formGraphics.FillEllipse(drawBrush, 182, 145, 10, 10);
+            formGraphics.DrawLine(drawPen, 188, 150, 212, 102);
+            formGraphics.FillEllipse(drawBrush, 204, 102, 20, 20);
+            formGraphics.DrawLine(drawPen, 216, 102, 232, 78);
+            formGraphics.FillEllipse(drawBrush, 251, 41, 10, 10);
+            formGraphics.DrawLine(drawPen, 216, 102, 232, 78);
+            formGraphics.FillEllipse(drawBrush, 227, 78, 10, 10);
+
 
             formGraphics.FillEllipse(drawBrush, 141, 139, 15, 15);
             formGraphics.DrawLine(drawPen, 145, 145, 104, 149);
+            formGraphics.DrawLine(drawPen, 145, 145, 182, 91);
 
+            
+            formGraphics.FillEllipse(drawBrush, 177, 91, 12, 12);
+            formGraphics.DrawLine(drawPen, 180, 93, 210, 102);
+
+            formGraphics.FillEllipse(drawBrush, 149, 61, 20, 20);
+            formGraphics.DrawLine(drawPen, 180, 93, 153, 65);
+                
             formGraphics.FillEllipse(drawBrush, 102, 147, 10, 10);
             formGraphics.DrawLine(drawPen, 105, 150, 50, 175);
 
@@ -59,9 +82,10 @@ namespace FirstSummative_GreetingCard_
 
 
             formGraphics.FillEllipse(drawBrush, 251, 41, 10, 10);
-            formGraphics.FillEllipse(drawBrush, 149, 61, 20, 20);
-            formGraphics.FillEllipse(drawBrush, 177, 91, 12, 12);
-            formGraphics.FillEllipse(drawBrush, 204, 102, 20, 20);
+
+
+
+           
             formGraphics.FillEllipse(drawBrush, 227, 78, 10, 10);
 
 

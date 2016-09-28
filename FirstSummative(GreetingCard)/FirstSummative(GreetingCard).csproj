@@ -83,6 +83,9 @@
   <ItemGroup>
     <None Include="Resources\thank-you-greeting-cards.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elevator Ding-SoundBible.com-685385892.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
