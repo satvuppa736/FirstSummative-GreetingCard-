@@ -1,7 +1,6 @@
 ﻿///Created By Satvir Uppal
 ///On September 20th 2016
 ///First Summative for Programming Class
-///Follow me on Insta & Twitter @SatvirUppal
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +29,9 @@ namespace FirstSummative_GreetingCard_
             Graphics formGraphics = this.CreateGraphics();
 
             SoundPlayer player = new SoundPlayer(Properties.Resources.dingSound);
-                                                                                    //Plays sound when card is initially opened
+
+            //Plays sound when card is initially opened                                                                                   
+
             player.Play();
 
             Thread.Sleep(900);
@@ -42,12 +43,14 @@ namespace FirstSummative_GreetingCard_
             nameLabel.Visible = false;
             dateLabel.Visible = false;
 
-            formGraphics.Clear(Color.Black);            //Clears Screen
+            //Clears Screen
+
+            formGraphics.Clear(Color.Black);            
 
             Pen drawPen = new Pen(Color.White, 1);
             SolidBrush drawBrush = new SolidBrush(Color.White);
 
-//Creates Constellation 
+            //Creates Constellation 
 
             formGraphics.FillEllipse(drawBrush, 45, 171, 15, 15);
 
@@ -155,7 +158,9 @@ namespace FirstSummative_GreetingCard_
 
             formGraphics.DrawLine(drawPen, 105, 150, 50, 175);
 
-            SoundPlayer twinkle = new SoundPlayer(Properties.Resources.twinkle);    //Plays twinkle sound
+            //Plays "twinkle" sound
+
+            SoundPlayer twinkle = new SoundPlayer(Properties.Resources.twinkle);    
             twinkle.Play();
 
             Thread.Sleep(1600);
@@ -352,7 +357,9 @@ namespace FirstSummative_GreetingCard_
 
             Thread.Sleep(200);
 
-            SoundPlayer sounds = new SoundPlayer(Properties.Resources.whoop);  //Plays "Whoop" Sound
+            //Plays "Whoop" Sound
+
+            SoundPlayer sounds = new SoundPlayer(Properties.Resources.whoop);  
             sounds.Play();
             
             Graphics fg = this.CreateGraphics();
@@ -360,8 +367,10 @@ namespace FirstSummative_GreetingCard_
             Font drawFont = new Font("Courier Serif", 9, FontStyle.Bold);
             SolidBrush fontBrush = new SolidBrush(Color.HotPink);
 
-            fg.DrawString("Virgo is one of the constellations of the zodiac." , drawFont, fontBrush, 5, 350);       //Writes text explain constellation
-            fg.DrawString(" Its name is Latin for virgin, and its symbol is ♍.", drawFont, fontBrush, 5, 370);
+            //Writes text explain constellation
+
+            fg.DrawString("Virgo is one of the constellations of the zodiac." , drawFont, fontBrush, 5, 350);
+            fg.DrawString("It's name is Latin for 'virgin', and its symbol is ♍.", drawFont, fontBrush, 5, 370);
             fg.DrawString("Lying between Leo to the west and Libra to the east,", drawFont, fontBrush, 5, 385);
             fg.DrawString("it is the second largest constellation in the sky.", drawFont, fontBrush, 5, 400);
         }
